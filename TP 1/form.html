@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <title>Seguro No Pagamos Cooperativa</title>
-        <link rel="stylesheet" type="text/css" href="form.css">
-        <script src="form.js"></script>
+    <meta charset="UTF-8">
+	<title>Seguro No Pagamos Cooperativa</title>
+	<meta name="description" content="Seguros">
+	<meta name="keywords" content="['seguros', 'aseguradora']">
+    <title>Seguro No Pagamos Cooperativa</title>
+    <link rel="stylesheet" type="text/css" href="./form.css">
     </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
             <ul>
                 <li><a href="#">CONTACTO</a></li>
@@ -15,7 +17,7 @@
         </nav>
     </header>
     <h1>Formulario</h1>
-    <form>
+    <form class="form">
         <div>
             <label>Nombre:</label>
             <input type="text" id="name" required>
@@ -38,18 +40,19 @@
         </div><br>
         <div>
             <label>Tipo de Seguro:</label>
-            <select id="tipo" onchange="valorTipoSeguro()" required>
-                <option hidden disabled selected value> -- Seleccione una opción -- </option>
+            <select id="type" required>
+                <option hidden disabled selected> -- Seleccione una opción -- </option>
                 <option value="Básico">Básico</option>
                 <option value="Intermedio">Intermedio</option>
                 <option value="Premium">Premium</option>
             </select>
-            <label id="value"></label>
+            <p id="value"></p>
         </div><br>
-        <button type="submit" onclick="send()">Enviar</button>
+        <button type="submit">Enviar</button>
     </form>
     <footer>
         <h6>TP N° 1</h6>
     </footer>
 </body>
+<script src="./form.js"></script>
 </html>
