@@ -1,7 +1,6 @@
 const type = document.getElementById("type")
 const value = document.getElementById("value")
 const text = "El valor estimado para el tipo de seguro seleccionado es de: $"
-const button = document.getElementById("send")
 
 type.addEventListener("change", valorTipoSeguro)
 function valorTipoSeguro() {
@@ -18,7 +17,7 @@ function valorTipoSeguro() {
     }
 }
 
-button.addEventListener("click", sendForm)
+document.getElementById("send").addEventListener("click", sendForm)
 function sendForm() {
     let name = document.getElementById("name").value
     let lastname = document.getElementById("lastname").value
