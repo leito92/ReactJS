@@ -3,7 +3,7 @@ const textoValorTipoSeguro = document.getElementById("textoValorTipoSeguro")
 
 tipoSeguro.addEventListener("change", valorTipoSeguro)
 function valorTipoSeguro() {
-    switch(tipoSeguro.value){
+    switch(tipoSeguro.value) {
         case "básico":
             textoValorTipoSeguro.innerText = "Valor: $500"
             break;
