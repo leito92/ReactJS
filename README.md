@@ -1,2 +1,2 @@
 # ReactJS
-curso/materia
+curso
