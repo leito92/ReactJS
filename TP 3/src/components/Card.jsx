@@ -3,7 +3,7 @@ function Card({body}) {
         <div className="card">
             <div className="card-body">
                 {Object.keys(body).map((element) => 
-                    <CardBody key={element} title={element} text={body[element]}/>
+                    <CardBody key={`${element}_${body[element]}`} title={element} text={body[element]}/>
                 )}
             </div>
         </div>
@@ -13,7 +13,7 @@ function Card({body}) {
 function CardBody({title,text}) {
     return (
         <>
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}:</h5>
             <p className="card-text">{text}</p>
         </>
     );

@@ -5,10 +5,10 @@ import './List.css';
 function List({data}) {
     return (
         <Accordion>
-            {Object.keys(data).map((element, index) => 
-                <Accordion.Item key={element} eventKey={index}>
-                    <Accordion.Header>{element}</Accordion.Header>
-                    <Accordion.Body><Card body={data[element]}/></Accordion.Body>
+            {data.map((element) => 
+                <Accordion.Item key={element.id} eventKey={element.id}>
+                    <Accordion.Header>{element.name}</Accordion.Header>
+                    <Accordion.Body><Card body={element.info}/></Accordion.Body>
                 </Accordion.Item>
             )}
         </Accordion>
