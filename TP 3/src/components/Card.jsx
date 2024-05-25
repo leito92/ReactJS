@@ -10,7 +10,7 @@ function Card({body}) {
     );
 }
 
-function CardBody({title,text}) {
+function CardBody({title, text}) {
     return (
         <>
             <h5 className="card-title">{title}:</h5>
