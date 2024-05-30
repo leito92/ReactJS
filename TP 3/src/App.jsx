@@ -6,7 +6,7 @@ function App() {
   useEffect(() => { 
     fetch("https://6658ec85de346625136ae3f0.mockapi.io/products")
       .then((res) => res.json())
-      .then((data) => setData(data)); 
+      .then((url) => setData(url)); 
   }, []);
 
   return (
