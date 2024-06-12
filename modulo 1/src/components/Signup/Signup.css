@@ -1,0 +1,10 @@
+form {
+    border: 15px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
