@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
-import './Signup.css'
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import './Signup.css';
 
 function Signup() {
     const [firstname, setFirstname] = useState("");
@@ -10,12 +11,17 @@ function Signup() {
     const [confirm, setConfirm] = useState("");
 
     const handleSubmit = () => {
-        // signup authentication logic
+        // authentication logic
     };
 
     return (
-        <form>
-            <h1>Please sign up</h1>
+        <form className="form-signup w-100 m-auto">
+            <h2>Create an account</h2>
+            <div className="mb-3">
+                <p>
+                    <Link to="/">Or sign in to your account</Link>
+                </p>
+            </div>
             <div className="mb-3">
                 <label className="form-label">Firstname</label>
                 <input type="text" className="form-control" onChange={(e) => setFirstname(e.target.value)} required />
@@ -40,11 +46,9 @@ function Signup() {
                 <label className="form-label">Confirm password</label>
                 <input type="password" className="form-control" onChange={(e) => setConfirm(e.target.value)} required/>
             </div>
-            <div className="d-grid gap-2">
-                <button type="submit" className="btn btn-primary" onSubmit={handleSubmit}>Sign up</button>
-            </div>
+            <button type="submit" className="btn btn-primary w-100 py-2" onSubmit={handleSubmit}>Sign up</button>
         </form>
     )
 }
 
-export default Signup
+export default Signup;
