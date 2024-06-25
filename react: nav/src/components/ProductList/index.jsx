@@ -2,7 +2,7 @@ import "./ProductList.css";
 
 function Product() {
     return (
-        <p>hola mundo!</p>
+        <p>list of products..</p>
     )
 }
 
