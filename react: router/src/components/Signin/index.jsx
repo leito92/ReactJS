@@ -7,7 +7,7 @@ function Signin() {
             <h2>Sign in to your account</h2>
             <div className="mb-3">
                 <p>
-                    <Link to="/signup">Or register for a new account</Link>
+                    <Link to="signup">Or register for a new account</Link>
                 </p>
             </div>
             <div className="mb-3">
