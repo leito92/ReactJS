@@ -1,9 +1,9 @@
 import "./ProductList.css";
 
-function Product() {
+function ProductList() {
     return (
         <p>list of products..</p>
     )
 }
 
-export default Product;
+export default ProductList;
