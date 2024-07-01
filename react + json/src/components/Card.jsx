@@ -3,7 +3,7 @@ function Card({body}) {
         <div className="card">
             <div className="card-body">
                 {Object.keys(body).map((element) => 
-                    <CardBody key={`${element}_${body[element]}`} title={element} text={body[element]}/>
+                    <CardBody key={`${element}`} title={element} text={body[element]}/>
                 )}
             </div>
         </div>

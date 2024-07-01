@@ -10,7 +10,7 @@ function Signup() {
     const [password, setPassword] = useState("");
     const [confirm, setConfirm] = useState("");
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         // authentication logic
     };
 

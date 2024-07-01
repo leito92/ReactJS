@@ -14,7 +14,7 @@ function Product(){
         <div className="card">
             <div className="card-body">
                 {Object.keys(data).map((element) => 
-                    <CardBody key={`${element}_${data[element]}`} title={element} text={data[element]}/>
+                    <CardBody key={`${element}`} title={element} text={data[element]}/>
                 )}
             </div>
         </div>
