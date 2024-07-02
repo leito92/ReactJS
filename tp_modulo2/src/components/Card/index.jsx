@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import './Card.css'
+import Button from "../Button.jsx";
 
 function Card() {
     const {productId} = useParams();
@@ -17,7 +18,7 @@ function Card() {
                 {Object.keys(data).map((element) => 
                     <CardBody key={`${element}`} title={element} text={data[element]}/>
                 )}
-                <button type="button" className="btn btn-primary">Buy</button>
+                <Button />
             </div>
         </div>
     )
