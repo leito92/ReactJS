@@ -11,11 +11,12 @@ function Signup() {
     const [confirm, setConfirm] = useState("");
 
     const handleSubmit = (e) => {
-        // authentication logic
+        e.preventDefault();
+        //
     };
 
     return (
-        <form className="form-signup w-100 m-auto">
+        <form className="form-signup w-100 m-auto" onSubmit={handleSubmit} action=''>
             <h2>Create an account</h2>
             <div className="mb-3">
                 <p>
@@ -46,7 +47,7 @@ function Signup() {
                 <label className="form-label">Confirm password</label>
                 <input type="password" className="form-control" onChange={(e) => setConfirm(e.target.value)} required/>
             </div>
-            <button type="submit" className="btn btn-primary w-100 py-2" onSubmit={handleSubmit}>Sign up</button>
+            <button type="submit" className="btn btn-primary w-100 py-2">Sign up</button>
         </form>
     )
 }

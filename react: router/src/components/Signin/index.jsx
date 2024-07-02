@@ -1,9 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signin.css";
 
 function Signin() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        //
+    };
+
     return (
-        <form className="form-signin w-100 m-auto">
+        <form className="form-signin w-100 m-auto" onSubmit={handleSubmit} action="">
             <h2>Sign in to your account</h2>
             <div className="mb-3">
                 <p>
@@ -12,7 +21,7 @@ function Signin() {
             </div>
             <div className="mb-3">
                 <label className="form-label">Email address</label>
-                <input type="email" className="form-control" placeholder="Email address" />
+                <input type="email" className="form-control" placeholder="Email address" onChange={(e) => setEmail(e.target.value)} required/>
             </div>
             <div className="mb-3">
                 <div className="row g-2">
@@ -23,7 +32,7 @@ function Signin() {
                         <Link href="#">Forgot your password?</Link>
                     </div>
                 </div>
-                <input type="password" className="form-control" placeholder="Password" />
+                <input type="password" className="form-control" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required/>
             </div>
             <div className="form-check text-start my-3">
                 <input type="checkbox" className="form-check-input" />
