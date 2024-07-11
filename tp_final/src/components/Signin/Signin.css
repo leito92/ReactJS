@@ -1,0 +1,14 @@
+#title, #link {
+    text-align: center;
+}
+
+.form-signin {
+    max-width: 400px;
+    padding: 1rem;
+}
+
+#message {
+    color: red;
+    text-align: center;
+    padding: 1rem;
+}
