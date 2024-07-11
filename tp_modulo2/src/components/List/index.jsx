@@ -7,7 +7,7 @@ function List() {
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(-1);
     useEffect(() => { 
-        fetch("https://6658ec85de346625136ae3f0.mockapi.io/products")
+        fetch(`${process.env.REACT_APP_API_URL}`)
         .then((res) => res.json())
         .then((url) => setData(url)); 
     }, []);
