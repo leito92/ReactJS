@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import ProductList from "./components/ProductList.jsx"
+import List from "./components/List.jsx"
 import NotFound from './components/NotFound/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="products" element={<ProductList />}/>
+          <Route path="products" element={<List />}/>
         </Route>
         <Route path='*' element={<NotFound />}/>
       </Routes>
