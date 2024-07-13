@@ -16,11 +16,11 @@ function Signup() {
         e.preventDefault();
         setError(null);
         createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential)=>{
+        .then((userCredential) => {
             const user = userCredential.user;
             navigate('/');
         })
-        .catch((error)=>{
+        .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             setError(errorMessage);
