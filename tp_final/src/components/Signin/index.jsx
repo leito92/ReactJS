@@ -60,10 +60,6 @@ function Signin() {
                     </div>
                     <input type="password" className="form-control" placeholder="Password" onChange={(e) => setPassword(e.target.value)} minLength="6" required/>
                 </div>
-                <div className="form-check text-start my-3">
-                    <input type="checkbox" className="form-check-input" />
-                    <label className="form-check-labe">Remember me</label>
-                </div>
                 <button type="submit" className="btn btn-primary w-100 py-2">Sign in</button>
                 <p id="message">{error}</p>
             </form>
